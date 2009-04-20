@@ -22,7 +22,7 @@
     NSMenu *fileMenu = [[[NSApp mainMenu] itemAtIndex:1] submenu];
     NSAssert(fileMenu, @"Couldn't get File menu");
     
-    NSMenuItem *burnTapeMenuItem = [[[NSMenuItem alloc] initWithTitle:@"Burn Tape..."
+    NSMenuItem *burnTapeMenuItem = [[[NSMenuItem alloc] initWithTitle:@"Burn Tape to CD..."
                                                                action:@selector(burnTapeAction:)
                                                         keyEquivalent:@"r"] autorelease];
     [burnTapeMenuItem setTarget:self];

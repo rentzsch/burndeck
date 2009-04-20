@@ -32,6 +32,9 @@
 - (IBAction)burnTapeAction:(id)sender {
 	printf("+[BurnDeck burnTapeAction:]\n");
     
+    id windowController = [NSApp valueForKeyPath:@"delegate.windowController"];
+    [windowController performSelector:@selector(stopTape:) withObject:nil];
+    
     NSString *selectedTapePath = [NSApp valueForKeyPath:@"delegate.windowController.selectedTape.filename"];
     if ([selectedTapePath hasPrefix:@"/Users/"]) { // simple sanity checking
         DRTrack *track = [DRTrack trackForAudioFile:selectedTapePath];

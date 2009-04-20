@@ -2,14 +2,16 @@
 #import <DiscRecording/DiscRecording.h>
 #import <DiscRecordingUI/DiscRecordingUI.h>
 
+// TODO Disable Quitting while burning?
+
 @implementation BurnDeck
 
 + (void)load {
-	printf("+[BurnDeck load]\n");
+	//printf("+[BurnDeck load]\n");
 }
 
 + (void)initialize {
-	printf("+[BurnDeck initialize]\n");
+	//printf("+[BurnDeck initialize]\n");
 	[[NSNotificationCenter defaultCenter] addObserver:[[BurnDeck alloc] init]
 											 selector:@selector(appDidFinishLaunching:)
 												 name:NSApplicationDidFinishLaunchingNotification
@@ -17,7 +19,7 @@
 }
 
 - (void)appDidFinishLaunching:(NSNotification*)notification_ {
-	printf("-[BurnDeck appDidFinishLaunching:]\n");
+	//printf("-[BurnDeck appDidFinishLaunching:]\n");
     
     NSMenu *fileMenu = [[[NSApp mainMenu] itemAtIndex:1] submenu];
     NSAssert(fileMenu, @"Couldn't get File menu");
@@ -30,7 +32,7 @@
 }
 
 - (IBAction)burnTapeAction:(id)sender {
-	printf("+[BurnDeck burnTapeAction:]\n");
+	//printf("+[BurnDeck burnTapeAction:]\n");
     
     id windowController = [NSApp valueForKeyPath:@"delegate.windowController"];
     [windowController performSelector:@selector(stopTape:) withObject:nil];

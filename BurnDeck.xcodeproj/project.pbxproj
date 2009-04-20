@@ -24,7 +24,7 @@
 		7975D7FF0F9CDBE700F75422 /* BurnDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BurnDeck.m; sourceTree = "<group>"; };
 		7975D8080F9CDE5000F75422 /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = /System/Library/Frameworks/DiscRecording.framework; sourceTree = "<absolute>"; };
 		7975D8090F9CDE5000F75422 /* DiscRecordingUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecordingUI.framework; path = /System/Library/Frameworks/DiscRecordingUI.framework; sourceTree = "<absolute>"; };
-		8D5B49B6048680CD000E48DA /* BurnDeck.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurnDeck.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B6048680CD000E48DA /* BurnDeck 1.1.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BurnDeck 1.1.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -105,7 +105,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D5B49B6048680CD000E48DA /* BurnDeck.bundle */,
+				8D5B49B6048680CD000E48DA /* BurnDeck 1.1.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			name = BurnDeck;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = BurnDeck;
-			productReference = 8D5B49B6048680CD000E48DA /* BurnDeck.bundle */;
+			productReference = 8D5B49B6048680CD000E48DA /* BurnDeck 1.1.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 				GCC_PREFIX_HEADER = BurnDeck_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = BurnDeck;
+				PRODUCT_NAME = "BurnDeck ${PRODUCT_VERSION}";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -218,7 +218,7 @@
 				GCC_PREFIX_HEADER = BurnDeck_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = BurnDeck;
+				PRODUCT_NAME = "BurnDeck ${PRODUCT_VERSION}";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -233,6 +233,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				PRODUCT_VERSION = 1.1;
 				SDKROOT = macosx10.5;
 			};
 			name = Debug;
@@ -245,6 +246,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRODUCT_VERSION = 1.1;
 				SDKROOT = macosx10.5;
 			};
 			name = Release;
